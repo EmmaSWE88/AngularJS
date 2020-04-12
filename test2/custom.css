@@ -1,0 +1,64 @@
+/* COLORS */
+:root{ 
+    --custom-text-purple: #5736B9; 
+    --custom-purple: #5736B9; 
+    --custom-black: #000000; 
+    --custom-grey: #3d3a3a; 
+    --custom-white: #ffffff;
+    --custom-text-white: #ffffff;
+    --custom-link-hover: #9c9898;
+}
+
+
+.navbar-dark-custom {
+   color: var(--custom-text-white);
+}
+.footer-dark-custom {
+    color: var(--custom-text-white);
+ }
+a:link {
+    text-decoration: none;
+ }
+ a:hover {
+    color: var(--custom-link-hover);
+  }
+.bg-dark-custom{
+    background-color: var(--custom-black);
+    color: var(--custom-text-white);
+}
+
+.bg-custom-grey {
+    background-color: var(--custom-grey);
+}
+.bg-custom-purple {
+    background-color: var(--custom-purple);
+}
+
+.bg-light-custom {
+    background-color: var(--custom-white);
+}
+
+.custom-text-color {
+    color: var(--custom-text-purple);
+}
+
+/* BODY*/
+body {
+    background: url(images/film_bakgrund_2.jpg);
+}
+
+/* CUSTOM COMPONENTS */
+
+.card-sub-title {
+    font-size: 0.75rem;
+}
+
+.card-sub-text {
+    font-size: 0.75rem;
+    font-weight: 650;
+}
+
+.custom-border {
+    border-color: var(--custom-purple);
+    border-radius: 10%;
+}
