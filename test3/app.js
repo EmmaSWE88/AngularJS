@@ -3,7 +3,7 @@ var app = angular.module("demoApp", ["ngRoute"])
 app.config(function($routeProvider){
     $routeProvider
     .when("/",{
-        templateUrl:"index.html", //Den ligger inte i views-katalogen
+        templateUrl:"views/index.html",
         controller: "defaultController"
     })
     .when("/about",{
@@ -31,11 +31,11 @@ app.controller("defaultController", function($scope) {
 // DIRECTIVES = Partial Views
 app.directive("appheader", function() {
     return {
-        template: '<header> <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom d-flex justify-content-around"> <a class="navbar-brand ml-2" href="#/!"> <img src="images/Logo_sample_3_20200204.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> 4U Editing </a><div class="collapse navbar-collapse justify-content-end" id="navbarNav"><ul class="navbar-nav"><li class="nav-item mr-5"> <a class="nav-link" href="#!aboutus.html">About Us <span class="sr-only">(current)</span></a></li><li class="nav-item mr-5"> <a class="nav-link" href="#!contactus.html">Contact Us</a></li><li class="nav-item mr-2"> <a class="nav-link" href="#">Terms & Conditions</a></li></ul></div> </nav> </header>'
+        template: '<header> <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom d-flex justify-content-around"> <a class="navbar-brand ml-2" href="#/!"> <img src="images/Logo_sample_3_20200204.jpg" width="30" height="30" class="d-inline-block align-top" alt=""> 4U Editing </a><div class="collapse navbar-collapse justify-content-end" id="navbarNav"><ul class="navbar-nav"><li class="nav-item mr-5"> <a class="nav-link" href="#!about.html">About Us <span class="sr-only">(current)</span></a></li><li class="nav-item mr-5"> <a class="nav-link" href="#!contact.html">Contact Us</a></li><li class="nav-item mr-2"> <a class="nav-link" href="#">Terms & Conditions</a></li></ul></div> </nav> </header>'
     }
 })
 app.directive("appfooter",function(){
     return {
-        template: '<footer class="page-footer bg-dark-custom footer-dark-custom fixed-bottom"><div class="pt-5 pb-4 d-flex justify-content-between align-items-center"> <a class="ml-2 mr-5 footer-dark-custom" href="#/!"> <img src="images/Logo_sample_3_20200204.jpg" width="80" height="80" class="d-inline-block align-top" alt=""></a><div class="justify-content-center"> <a class="footer-dark-custom" href="#!aboutus.html">About Us</a> <a class="footer-dark-custom ml-4" href="#!contactus.html">Contact Us</a> <a class="footer-dark-custom ml-4" href="#">Terms & Conditions</a></div><p class="mr-5">Editor Street 1,720 05 <br> Westeros Sweden <br> +46 070 123 44 55 <br> edittogether@gmail.com</p></div> </footer>'
+        template: '<footer class="page-footer bg-dark-custom footer-dark-custom fixed-bottom"><div class="pt-5 pb-4 d-flex justify-content-between align-items-center"> <a class="ml-2 mr-5 footer-dark-custom" href="#/!"> <img src="images/Logo_sample_3_20200204.jpg" width="80" height="80" class="d-inline-block align-top" alt=""></a><div class="justify-content-center"> <a class="footer-dark-custom" href="#!about.html">About Us</a> <a class="footer-dark-custom ml-4" href="#!contact.html">Contact Us</a> <a class="footer-dark-custom ml-4" href="#">Terms & Conditions</a></div><p class="mr-5">Editor Street 1,720 05 <br> Westeros Sweden <br> +46 070 123 44 55 <br> edittogether@gmail.com</p></div> </footer>'
     }
 })

@@ -40,12 +40,6 @@ app.directive("appfooter",function(){
     }
 })
 
-// app.directive("aboutus", function(){
-
-// })
-
-
-
 
 // app.directive("aboutustext", function(){
 //     return {
